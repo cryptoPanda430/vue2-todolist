@@ -1,4 +1,4 @@
-# todo-app-vuev2 
+# vue2-todolist-for-test
 
 ## Project setup
 ```
