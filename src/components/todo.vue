@@ -8,7 +8,7 @@
     </div>
 
       <b-container class="mt-5">
-        <p class="text-left font-weight-bold">Add Items</p>
+        <p class="subtitle">Add Items</p>
         <b-form @submit="onSubmit" inline class="mb-3">
           <div v-show="!isEditing" class="form-group">    
               <b-form-input
@@ -30,7 +30,7 @@
               <b-button v-on:click="updateTodo" variant="dark" :disabled="errors.any()">EDIT</b-button>
           </div>
         </b-form>
-        <p class="text-left font-weight-bold">Tasks</p>
+        <p class="subtitle">Tasks</p>
         <b-list-group>
           <b-list-group-item v-for="(item, index) in todos" :key="index" class="d-flex justify-content-between"> 
             {{ item }} 
@@ -38,7 +38,7 @@
               <b-button
               v-on:click="edit(index, item)"
               variant="success"
-              class="mx-3"
+              class="mx-1"
               >Edit</b-button
             >
             <b-button
@@ -107,8 +107,15 @@ export default {
 .title{
   text-align : left;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   color: black;
   font-family: Comic Sans MS;
+}
+.subtitle{
+  text-align : left;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  
 }
 </style>
