@@ -1,4 +1,4 @@
-# todo-app-vuev2
+# todo-app-vuev2 
 
 ## Project setup
 ```
